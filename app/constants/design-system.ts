@@ -20,7 +20,6 @@ export const DESIGN_TOKENS = {
     }
   },
   
-  // Typography
   typography: {
     fontFamily: {
       sans: 'var(--font-geist-sans)',
@@ -40,7 +39,6 @@ export const DESIGN_TOKENS = {
     }
   },
   
-  // Spacing
   spacing: {
     section: {
       sm: '4rem',

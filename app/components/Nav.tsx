@@ -15,7 +15,7 @@ const Nav: React.FC<NavProps> = ({ className = '' }) => {
   const { handleItemClick } = useNavigation();
   const { brand, items } = navigationConfig;
 
-  const headerClasses = `fixed top-0 left-1/2 -translate-x-1/2 z-50 lg:w-[95.67%] px-5 pt-5 ${className}`.trim();
+  const headerClasses = `fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full px-5 pt-5 ${className}`.trim();
 
   return (
     <header className={headerClasses}>

@@ -15,12 +15,8 @@ export const useNavigation = (): UseNavigationReturn => {
   const handleItemClick = useCallback((item: NavigationItem) => {
     setActiveItem(item.id);
     
-    // Handle navigation based on item type
     if (item.href) {
-      // For external links or hash links
-      // Handle smooth scrolling for hash links
       if (item.href.startsWith('#')) {
-        // Smooth scroll to section
         const element = document.querySelector(item.href);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
@@ -30,10 +26,8 @@ export const useNavigation = (): UseNavigationReturn => {
           });
         }
       } else if (item.href.startsWith('http')) {
-        // External link
         window.open(item.href, '_blank', 'noopener,noreferrer');
       } else {
-        // Internal navigation
         window.location.href = item.href;
       }
     }
