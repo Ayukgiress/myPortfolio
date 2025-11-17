@@ -6,6 +6,7 @@ import { useNavigation } from '../hooks/useNavigation';
 import NavigationContainer from './navigation/NavigationContainer';
 import Brand from './ui/Brand';
 import NavigationMenu from './ui/NavigationMenu';
+import { ThemeToggle } from './ui/ThemeToggle';
 
 interface NavProps {
   className?: string;
@@ -21,15 +22,18 @@ const Nav: React.FC<NavProps> = ({ className = '' }) => {
     <header className={headerClasses}>
       <NavigationContainer>
         <div className="flex items-center justify-between">
-          <Brand 
-            name={brand.name} 
+          <Brand
+            name={brand.name}
             href={brand.href}
           />
           <div className="flex-1" aria-label="branding-spacer" />
-          <NavigationMenu 
-            items={items}
-            onItemClick={handleItemClick}
-          />
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            <NavigationMenu
+              items={items}
+              onItemClick={handleItemClick}
+            />
+          </div>
         </div>
       </NavigationContainer>
     </header>
