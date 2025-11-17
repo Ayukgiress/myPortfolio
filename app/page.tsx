@@ -1,5 +1,6 @@
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import { SiJavascript, SiTailwindcss, SiHtml5, SiReact, SiReactquery, SiMongodb, SiPostgresql, SiNextdotjs, SiNodedotjs, SiNestjs, SiTypescript, SiExpress, SiGit, SiNpm, SiPnpm } from 'react-icons/si';
 
 export default function Home() {
@@ -120,126 +121,160 @@ export default function Home() {
             </div>
 
             {/* Tech Stack */}
-            <div className="mt-16 space-y-12 animate-fade-in-down">
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                {/* JavaScript */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0s' }}>
-                  <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '0s' }}>
-                    <SiJavascript className="w-8 h-8 text-black" />
-                  </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">JavaScript</span>
+            <div className="mt-16 space-y-16 animate-fade-in-down">
+              {/* Frontend Technologies */}
+              <div className="space-y-8">
+                <div className="text-center">
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">Frontend</h3>
+                  <div className="h-1 w-24 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
                 </div>
-
-                {/* TypeScript */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.1s' }}>
-                  <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '0.5s' }}>
-                    <SiTypescript className="w-8 h-8 text-white" />
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                  {/* JavaScript */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0s' }}>
+                    <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '0s' }}>
+                      <SiJavascript className="w-8 h-8 text-black" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">JavaScript</span>
                   </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">TypeScript</span>
+
+                  {/* TypeScript */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.1s' }}>
+                    <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '0.5s' }}>
+                      <SiTypescript className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">TypeScript</span>
+                  </div>
+
+                  {/* HTML5 */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.2s' }}>
+                    <div className="w-16 h-16 bg-orange-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '1s' }}>
+                      <SiHtml5 className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">HTML5</span>
+                  </div>
+
+                  {/* React */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.3s' }}>
+                    <div className="w-16 h-16 bg-cyan-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '1.5s' }}>
+                      <SiReact className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">React</span>
+                  </div>
+
+                  {/* Next.js */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.4s' }}>
+                    <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center shadow-lg border border-gray-700 tech-icon animate-float" style={{ animationDelay: '2s' }}>
+                      <SiNextdotjs className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Next.js</span>
+                  </div>
+
+                  {/* Tailwind CSS */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.5s' }}>
+                    <div className="w-16 h-16 bg-teal-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '2.5s' }}>
+                      <SiTailwindcss className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Tailwind</span>
+                  </div>
                 </div>
+              </div>
 
-                {/* HTML5 */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.2s' }}>
-                  <div className="w-16 h-16 bg-orange-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '1s' }}>
-                    <SiHtml5 className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">HTML5</span>
+              {/* Backend Technologies */}
+              <div className="space-y-8">
+                <div className="text-center">
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">Backend</h3>
+                  <div className="h-1 w-24 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
                 </div>
-
-                {/* React */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.3s' }}>
-                  <div className="w-16 h-16 bg-cyan-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '1.5s' }}>
-                    <SiReact className="w-8 h-8 text-white" />
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 justify-center">
+                  {/* Node.js */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.6s' }}>
+                    <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '3s' }}>
+                      <SiNodedotjs className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Node.js</span>
                   </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">React</span>
+
+                  {/* Express */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.7s' }}>
+                    <div className="w-16 h-16 bg-gray-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '3.5s' }}>
+                      <SiExpress className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Express</span>
+                  </div>
+
+                  {/* NestJS */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.8s' }}>
+                    <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '4s' }}>
+                      <SiNestjs className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">NestJS</span>
+                  </div>
+
+                  {/* React Native */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.9s' }}>
+                    <div className="w-16 h-16 bg-cyan-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '4.5s' }}>
+                      <SiReactquery className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">React Native</span>
+                  </div>
                 </div>
+              </div>
 
-                {/* React Native */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.4s' }}>
-                  <div className="w-16 h-16 bg-cyan-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '2s' }}>
-                    <SiReactquery className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">React Native</span>
+              {/* Databases */}
+              <div className="space-y-8">
+                <div className="text-center">
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">Databases</h3>
+                  <div className="h-1 w-24 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
                 </div>
-
-                {/* Next.js */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.5s' }}>
-                  <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center shadow-lg border border-gray-700 tech-icon animate-float" style={{ animationDelay: '2.5s' }}>
-                    <SiNextdotjs className="w-8 h-8 text-white" />
+                <div className="grid grid-cols-2 md:grid-cols-2 gap-6 justify-center">
+                  {/* MongoDB */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '1s' }}>
+                    <div className="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '5s' }}>
+                      <SiMongodb className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">MongoDB</span>
                   </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Next.js</span>
+
+                  {/* PostgreSQL */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '1.1s' }}>
+                    <div className="w-16 h-16 bg-blue-800 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '5.5s' }}>
+                      <SiPostgresql className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">PostgreSQL</span>
+                  </div>
                 </div>
+              </div>
 
-                {/* Tailwind CSS */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.6s' }}>
-                  <div className="w-16 h-16 bg-teal-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '3s' }}>
-                    <SiTailwindcss className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Tailwind CSS</span>
+              {/* Tools & Version Control */}
+              <div className="space-y-8">
+                <div className="text-center">
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">Tools & Version Control</h3>
+                  <div className="h-1 w-24 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
                 </div>
-
-                {/* Node.js */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.7s' }}>
-                  <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '3.5s' }}>
-                    <SiNodedotjs className="w-8 h-8 text-white" />
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+                  {/* Git */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '1.2s' }}>
+                    <div className="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '6s' }}>
+                      <SiGit className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Git</span>
                   </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Node.js</span>
-                </div>
 
-                {/* Express */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.8s' }}>
-                  <div className="w-16 h-16 bg-gray-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '4s' }}>
-                    <SiExpress className="w-8 h-8 text-white" />
+                  {/* npm */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '1.3s' }}>
+                    <div className="w-16 h-16 bg-red-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '6.5s' }}>
+                      <SiNpm className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">npm</span>
                   </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Express</span>
-                </div>
 
-                {/* NestJS */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '0.9s' }}>
-                  <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '4.5s' }}>
-                    <SiNestjs className="w-8 h-8 text-white" />
+                  {/* pnpm */}
+                  <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '1.4s' }}>
+                    <div className="w-16 h-16 bg-yellow-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '7s' }}>
+                      <SiPnpm className="w-8 h-8 text-black" />
+                    </div>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">pnpm</span>
                   </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">NestJS</span>
-                </div>
-
-                {/* MongoDB */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '1s' }}>
-                  <div className="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '5s' }}>
-                    <SiMongodb className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">MongoDB</span>
-                </div>
-
-                {/* PostgreSQL */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '1.1s' }}>
-                  <div className="w-16 h-16 bg-blue-800 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '5.5s' }}>
-                    <SiPostgresql className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">PostgreSQL</span>
-                </div>
-
-                {/* Git */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '1.2s' }}>
-                  <div className="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '6s' }}>
-                    <SiGit className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Git</span>
-                </div>
-
-                {/* npm */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '1.3s' }}>
-                  <div className="w-16 h-16 bg-red-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '6.5s' }}>
-                    <SiNpm className="w-8 h-8 text-white" />
-                  </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">npm</span>
-                </div>
-
-                {/* pnpm */}
-                <div className="flex flex-col items-center gap-3 group animate-stagger-fade-in" style={{ animationDelay: '1.4s' }}>
-                  <div className="w-16 h-16 bg-yellow-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '7s' }}>
-                    <SiPnpm className="w-8 h-8 text-black" />
-                  </div>
-                  <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">pnpm</span>
                 </div>
               </div>
             </div>
@@ -266,10 +301,8 @@ export default function Home() {
               {/* HackerRank JavaScript Intermediate */}
               <div className="group bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/20 dark:border-gray-700/50">
                 <div className="space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                    </svg>
+                  <div className="w-full h-48 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
+                    <img src="/certificates/Screenshot from 2025-11-17 10-42-33.png" alt="JavaScript Intermediate Certificate" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-2xl font-bold text-white">JavaScript</h3>
@@ -287,10 +320,8 @@ export default function Home() {
               {/* HackerRank React Basics */}
               <div className="group bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/20 dark:border-gray-700/50">
                 <div className="space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89zM7.37 19.24c.35.27.79.44 1.26.44.48 0 .9-.16 1.26-.44.35-.27.58-.64.58-1.06 0-.43-.23-.8-.58-1.06-.35-.27-.78-.44-1.26-.44-.47 0-.91.17-1.26.44-.35.26-.58.63-.58 1.06 0 .42.23.79.58 1.06zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.93 7.57c-.05.08-.1.16-.17.23-.14.14-.32.23-.52.27-.43.08-.87-.13-1.08-.52-.05-.1-.08-.2-.08-.31 0-.18.06-.35.17-.49.28-.37.88-.43 1.31-.15.11.07.2.17.26.3.14.31.08.68-.11.97-.05.08-.11.15-.18.22-.14.14-.32.23-.52.27-.43.08-.87-.13-1.08-.52-.05-.1-.08-.2-.08-.31 0-.18.06-.35.17-.49.28-.37.88-.43 1.31-.15.11.07.2.17.26.3.14.31.08.68-.11.97z"/>
-                    </svg>
+                  <div className="w-full h-48 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
+                    <img src="/certificates/Screenshot from 2025-11-17 10-42-51.png" alt="React Basics Certificate" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-2xl font-bold text-white">React</h3>
@@ -308,10 +339,8 @@ export default function Home() {
               {/* HackerRank Node.js */}
               <div className="group bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/20 dark:border-gray-700/50">
                 <div className="space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 1.27l10.09 5.8v11.86L12 22.73 1.91 18.93V7.07L12 1.27zM12 3.73L4.91 7.87v8.26L12 20.27l7.09-4.14V7.87L12 3.73zM10.09 8.73h3.82L12 12.09l-1.91-3.36zm1.91 6.18l1.91-3.36h3.82l-5.73 10-5.73-10h3.82l1.91 3.36z"/>
-                    </svg>
+                  <div className="w-full h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
+                    <img src="/certificates/Screenshot from 2025-11-17 10-43-25.png" alt="Node.js Certificate" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-2xl font-bold text-white">Node.js</h3>
@@ -350,10 +379,8 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/50 dark:border-gray-700/50">
                 <div className="space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
+                  <div className="w-full h-48 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
+                    <img src="/project-images/Screenshot from 2025-11-16 14-03-45.png" alt="E-Commerce Platform" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-2xl font-bold text-black dark:text-white">E-Commerce Platform</h3>
@@ -376,88 +403,8 @@ export default function Home() {
 
               <div className="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/50 dark:border-gray-700/50">
                 <div className="space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                  <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-black dark:text-white">Analytics Dashboard</h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A comprehensive analytics dashboard with real-time data visualization, built with React and D3.js for interactive charts.</p>
-                  </div>
-                  <div className="flex items-center justify-between pt-4">
-                    <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">React</span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">D3.js</span>
-                    </div>
-                    <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
-                      <span>View</span>
-                      <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-                  <div className="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/50 dark:border-gray-700/50">
-                <div className="space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                  <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-black dark:text-white">Analytics Dashboard</h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A comprehensive analytics dashboard with real-time data visualization, built with React and D3.js for interactive charts.</p>
-                  </div>
-                  <div className="flex items-center justify-between pt-4">
-                    <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">React</span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">D3.js</span>
-                    </div>
-                    <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
-                      <span>View</span>
-                      <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-               <div className="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/50 dark:border-gray-700/50">
-                <div className="space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                  <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-black dark:text-white">Analytics Dashboard</h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A comprehensive analytics dashboard with real-time data visualization, built with React and D3.js for interactive charts.</p>
-                  </div>
-                  <div className="flex items-center justify-between pt-4">
-                    <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">React</span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">D3.js</span>
-                    </div>
-                    <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
-                      <span>View</span>
-                      <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-               <div className="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/50 dark:border-gray-700/50">
-                <div className="space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
+                  <div className="w-full h-48 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
+                    <img src="/project-images/Screenshot from 2025-11-16 14-06-26.png" alt="Analytics Dashboard" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-2xl font-bold text-black dark:text-white">Analytics Dashboard</h3>
@@ -480,10 +427,56 @@ export default function Home() {
 
               <div className="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/50 dark:border-gray-700/50">
                 <div className="space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                    </svg>
+                  <div className="w-full h-48 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
+                    <img src="/project-images/Screenshot from 2025-11-16 14-10-03.png" alt="Weather Dashboard" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-2xl font-bold text-black dark:text-white">Weather Dashboard</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A responsive weather dashboard with location-based forecasts, interactive maps, and historical data visualization.</p>
+                  </div>
+                  <div className="flex items-center justify-between pt-4">
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Vue.js</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Chart.js</span>
+                    </div>
+                    <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
+                      <span>View</span>
+                      <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/50 dark:border-gray-700/50">
+                <div className="space-y-6">
+                  <div className="w-full h-48 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
+                    <img src="/project-images/Screenshot from 2025-11-16 14-15-43.png" alt="Portfolio Website" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-2xl font-bold text-black dark:text-white">Portfolio Website</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A modern portfolio website showcasing projects, skills, and experience with smooth animations and responsive design.</p>
+                  </div>
+                  <div className="flex items-center justify-between pt-4">
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Next.js</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Tailwind CSS</span>
+                    </div>
+                    <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
+                      <span>View</span>
+                      <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/50 dark:border-gray-700/50">
+                <div className="space-y-6">
+                  <div className="w-full h-48 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
+                    <img src="/project-images/Screenshot from 2025-11-16 14-18-07.png" alt="Task Management App" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-2xl font-bold text-black dark:text-white">Task Management App</h3>
@@ -493,6 +486,30 @@ export default function Home() {
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Vue.js</span>
                       <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Firebase</span>
+                    </div>
+                    <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
+                      <span>View</span>
+                      <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transform transition-all duration-500 hover:-translate-y-3 border border-gray-200/50 dark:border-gray-700/50">
+                <div className="space-y-6">
+                  <div className="w-full h-48 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
+                    <img src="/project-images/Screenshot from 2025-11-16 14-03-45.png" alt="Blog Platform" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-2xl font-bold text-black dark:text-white">Blog Platform</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A full-featured blog platform with markdown support, SEO optimization, and content management system.</p>
+                  </div>
+                  <div className="flex items-center justify-between pt-4">
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Gatsby</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">GraphQL</span>
                     </div>
                     <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
                       <span>View</span>
@@ -680,6 +697,7 @@ export default function Home() {
 </section>
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

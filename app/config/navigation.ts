@@ -1,4 +1,4 @@
-import { NavigationConfig } from '@/types/navigation';
+import { NavigationConfig } from '../types/navigation';
 
 export const navigationConfig: NavigationConfig = {
   brand: {

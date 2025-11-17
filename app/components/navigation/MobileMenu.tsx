@@ -1,5 +1,7 @@
 import React from 'react';
-import { NavigationItem } from '@/types';
+import {NavigationItem } from '@/app/types';
+
+
 import NavigationLink from './NavigationLink';
 
 interface MobileMenuProps {
