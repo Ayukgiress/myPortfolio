@@ -1,4 +1,4 @@
-import { HeroContent, NavigationItem, ProjectItem, ContactInfo } from '@/types';
+import { HeroContent, NavigationItem, ProjectItem, ContactInfo } from '../types';
 
 export const navigationConfig: NavigationItem[] = [
   { id: 'home', label: 'Home', href: '#home' },

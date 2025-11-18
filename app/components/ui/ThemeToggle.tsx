@@ -47,7 +47,7 @@ export function ThemeToggle() {
     >
       {resolvedTheme === "dark" ? (
         <svg
-          className="w-6 h-6 text-yellow-500 group-hover:text-yellow-400 transition-colors"
+          className="w-4 h-4 text-yellow-500 group-hover:text-yellow-400 transition-colors"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -61,7 +61,7 @@ export function ThemeToggle() {
         </svg>
       ) : (
         <svg
-          className="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors"
+          className="w-2 h-2 text-gray-600 dark:text-gray-300 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

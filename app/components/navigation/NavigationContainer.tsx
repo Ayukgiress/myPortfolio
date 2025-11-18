@@ -9,7 +9,7 @@ const NavigationContainer: React.FC<NavigationContainerProps> = ({
   children,
   className = ''
 }) => {
-  const baseClasses = 'bg-black/90 text-white border border-[#1f1f1f] shadow-[0_8px_20px_rgba(0,0,0,0.8)] rounded-full backdrop-blur-sm';
+  const baseClasses = 'bg-black/90 text-white border border-[#1f1f1f] shadow-[0_8px_20px_rgba(0,0,0,0.8)] backdrop-blur-sm rounded-full lg:rounded-full';
   const combinedClasses = `${baseClasses} ${className}`.trim();
 
   return (
