@@ -1,11 +1,16 @@
+"use client";
+
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { useTranslation } from 'react-i18next';
 import { SiJavascript, SiTailwindcss, SiHtml5, SiReact, SiReactquery, SiMongodb, SiPostgresql, SiNextdotjs, SiNodedotjs, SiNestjs, SiTypescript, SiExpress, SiGit, SiNpm, SiPnpm } from 'react-icons/si';
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-zinc-50 via-white to-zinc-100 dark:from-black dark:via-zinc-900 dark:to-black text-foreground">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 text-foreground">
       <Nav />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -18,18 +23,18 @@ export default function Home() {
     {/* Left Column - Name and Career */}
     <div className="animate-fade-in-up space-y-8">
       <div className="space-y-4">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-black via-gray-800 to-black dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent leading-tight">
-          Ayuk Giress
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-black via-gray-800 to-black dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent leading-tight">
+          {t('hero.name')}
         </h1>
         <div className="h-1 w-32 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full"></div>
       </div>
 
       <div className="space-y-6">
         <p className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300">
-          Full Stack Developer
+          {t('hero.title')}
         </p>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg">
-          Crafting modern web applications with cutting-edge technologies and exceptional user experiences.
+          {t('hero.subtitle')}
         </p>
       </div>
 
@@ -39,7 +44,7 @@ export default function Home() {
           className="group bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-green-500/25 transform hover:-translate-y-1"
         >
           <span className="flex items-center justify-center gap-2">
-            Learn More
+            {t('hero.learnMore')}
             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
@@ -50,7 +55,7 @@ export default function Home() {
           className="group border-2 border-green-600 text-green-600 dark:text-green-400 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-green-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-green-500/25 transform hover:-translate-y-1"
         >
           <span className="flex items-center justify-center gap-2">
-            Contact Me
+            {t('hero.contactMe')}
             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
@@ -111,12 +116,12 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent animate-fade-in">
-                  About Me
+                  {t('about.title')}
                 </h2>
                 <div className="h-1 w-32 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
               </div>
               <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-delay">
-                I'm a passionate full-stack developer with a love for creating innovative web applications. I specialize in modern web technologies and enjoy bringing ideas to life through clean, efficient code. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
+                {t('about.description')}
               </p>
             </div>
 
@@ -125,7 +130,7 @@ export default function Home() {
               {/* Frontend Technologies */}
               <div className="space-y-8">
                 <div className="text-center">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">Frontend</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">{t('about.frontend')}</h3>
                   <div className="h-1 w-24 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -134,7 +139,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '0s' }}>
                       <SiJavascript className="w-8 h-8 text-black" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">JavaScript</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.javascript')}</span>
                   </div>
 
                   {/* TypeScript */}
@@ -142,7 +147,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '0.5s' }}>
                       <SiTypescript className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">TypeScript</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.typescript')}</span>
                   </div>
 
                   {/* HTML5 */}
@@ -150,7 +155,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-orange-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '1s' }}>
                       <SiHtml5 className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">HTML5</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.html5')}</span>
                   </div>
 
                   {/* React */}
@@ -158,7 +163,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-cyan-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '1.5s' }}>
                       <SiReact className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">React</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.react')}</span>
                   </div>
 
                   {/* Next.js */}
@@ -166,7 +171,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center shadow-lg border border-gray-700 tech-icon animate-float" style={{ animationDelay: '2s' }}>
                       <SiNextdotjs className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Next.js</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.nextjs')}</span>
                   </div>
 
                   {/* Tailwind CSS */}
@@ -174,7 +179,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-teal-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '2.5s' }}>
                       <SiTailwindcss className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Tailwind</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.tailwind')}</span>
                   </div>
                 </div>
               </div>
@@ -182,7 +187,7 @@ export default function Home() {
               {/* Backend Technologies */}
               <div className="space-y-8">
                 <div className="text-center">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">Backend</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">{t('about.backend')}</h3>
                   <div className="h-1 w-24 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 justify-center">
@@ -191,7 +196,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '3s' }}>
                       <SiNodedotjs className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Node.js</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.nodejs')}</span>
                   </div>
 
                   {/* Express */}
@@ -199,7 +204,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-gray-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '3.5s' }}>
                       <SiExpress className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Express</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.express')}</span>
                   </div>
 
                   {/* NestJS */}
@@ -207,7 +212,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '4s' }}>
                       <SiNestjs className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">NestJS</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.nestjs')}</span>
                   </div>
 
                   {/* React Native */}
@@ -215,7 +220,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-cyan-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '4.5s' }}>
                       <SiReactquery className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">React Native</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.reactnative')}</span>
                   </div>
                 </div>
               </div>
@@ -223,7 +228,7 @@ export default function Home() {
               {/* Databases */}
               <div className="space-y-8">
                 <div className="text-center">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">Databases</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">{t('about.databases')}</h3>
                   <div className="h-1 w-24 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-2 gap-6 justify-center">
@@ -232,7 +237,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '5s' }}>
                       <SiMongodb className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">MongoDB</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.mongodb')}</span>
                   </div>
 
                   {/* PostgreSQL */}
@@ -240,7 +245,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-blue-800 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '5.5s' }}>
                       <SiPostgresql className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">PostgreSQL</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.postgresql')}</span>
                   </div>
                 </div>
               </div>
@@ -248,7 +253,7 @@ export default function Home() {
               {/* Tools & Version Control */}
               <div className="space-y-8">
                 <div className="text-center">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">Tools & Version Control</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">{t('about.tools')}</h3>
                   <div className="h-1 w-24 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6 justify-center">
@@ -257,7 +262,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '6s' }}>
                       <SiGit className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">Git</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.git')}</span>
                   </div>
 
                   {/* npm */}
@@ -265,7 +270,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-red-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '6.5s' }}>
                       <SiNpm className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">npm</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.npm')}</span>
                   </div>
 
                   {/* pnpm */}
@@ -273,7 +278,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-yellow-500 rounded-xl flex items-center justify-center shadow-lg tech-icon animate-float" style={{ animationDelay: '7s' }}>
                       <SiPnpm className="w-8 h-8 text-black" />
                     </div>
-                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">pnpm</span>
+                    <span className="text-white font-medium bg-black/50 px-3 py-1 rounded">{t('about.technologies.pnpm')}</span>
                   </div>
                 </div>
               </div>
@@ -288,12 +293,12 @@ export default function Home() {
             <div className="text-center space-y-8 mb-16">
               <div className="space-y-4">
                 <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent animate-fade-in">
-                  Certifications
+                  {t('certifications.title')}
                 </h2>
                 <div className="h-1 w-32 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
               </div>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Showcasing my commitment to continuous learning and skill development in web technologies.
+                {t('certifications.description')}
               </p>
             </div>
 
@@ -305,13 +310,13 @@ export default function Home() {
                     <img src="/certificates/Screenshot from 2025-11-17 10-42-33.png" alt="JavaScript Intermediate Certificate" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-white">JavaScript</h3>
-                    <p className="text-gray-300 leading-relaxed">Intermediate level certification demonstrating proficiency in JavaScript fundamentals, ES6+ features, and modern development practices.</p>
+                    <h3 className="text-2xl font-bold text-white">{t('certifications.javascript.title')}</h3>
+                    <p className="text-gray-300 leading-relaxed">{t('certifications.javascript.description')}</p>
                   </div>
                   <div className="flex items-center justify-between pt-4">
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-yellow-100/20 text-yellow-300 rounded-full text-sm font-medium border border-yellow-400/30">Intermediate</span>
-                      <span className="px-3 py-1 bg-gray-100/20 text-gray-300 rounded-full text-sm font-medium border border-gray-400/30">HackerRank</span>
+                      <span className="px-3 py-1 bg-yellow-100/20 text-yellow-300 rounded-full text-sm font-medium border border-yellow-400/30">{t('certifications.javascript.level')}</span>
+                      <span className="px-3 py-1 bg-gray-100/20 text-gray-300 rounded-full text-sm font-medium border border-gray-400/30">{t('certifications.javascript.platform')}</span>
                     </div>
                   </div>
                 </div>
@@ -324,13 +329,13 @@ export default function Home() {
                     <img src="/certificates/Screenshot from 2025-11-17 10-42-51.png" alt="React Basics Certificate" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-white">React</h3>
-                    <p className="text-gray-300 leading-relaxed">Basics certification covering fundamental React concepts including components, props, state management, and JSX.</p>
+                    <h3 className="text-2xl font-bold text-white">{t('certifications.react.title')}</h3>
+                    <p className="text-gray-300 leading-relaxed">{t('certifications.react.description')}</p>
                   </div>
                   <div className="flex items-center justify-between pt-4">
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-cyan-100/20 text-cyan-300 rounded-full text-sm font-medium border border-cyan-400/30">Basics</span>
-                      <span className="px-3 py-1 bg-gray-100/20 text-gray-300 rounded-full text-sm font-medium border border-gray-400/30">HackerRank</span>
+                      <span className="px-3 py-1 bg-cyan-100/20 text-cyan-300 rounded-full text-sm font-medium border border-cyan-400/30">{t('certifications.react.level')}</span>
+                      <span className="px-3 py-1 bg-gray-100/20 text-gray-300 rounded-full text-sm font-medium border border-gray-400/30">{t('certifications.react.platform')}</span>
                     </div>
                   </div>
                 </div>
@@ -343,13 +348,13 @@ export default function Home() {
                     <img src="/certificates/Screenshot from 2025-11-17 10-43-25.png" alt="Node.js Certificate" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-white">Node.js</h3>
-                    <p className="text-gray-300 leading-relaxed">Certification demonstrating knowledge of Node.js fundamentals, including modules, file system operations, and server-side JavaScript development.</p>
+                    <h3 className="text-2xl font-bold text-white">{t('certifications.nodejs.title')}</h3>
+                    <p className="text-gray-300 leading-relaxed">{t('certifications.nodejs.description')}</p>
                   </div>
                   <div className="flex items-center justify-between pt-4">
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100/20 text-green-300 rounded-full text-sm font-medium border border-green-400/30">Certified</span>
-                      <span className="px-3 py-1 bg-gray-100/20 text-gray-300 rounded-full text-sm font-medium border border-gray-400/30">HackerRank</span>
+                      <span className="px-3 py-1 bg-green-100/20 text-green-300 rounded-full text-sm font-medium border border-green-400/30">{t('certifications.nodejs.level')}</span>
+                      <span className="px-3 py-1 bg-gray-100/20 text-gray-300 rounded-full text-sm font-medium border border-gray-400/30">{t('certifications.nodejs.platform')}</span>
                     </div>
                   </div>
                 </div>
@@ -365,12 +370,12 @@ export default function Home() {
             <div className="text-center space-y-8 mb-16">
               <div className="space-y-4">
                 <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-black via-gray-800 to-black dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent animate-fade-in">
-                  My Projects
+                  {t('projects.title')}
                 </h2>
                 <div className="h-1 w-32 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
               </div>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Here are some of the projects I've worked on, showcasing my skills in full-stack development.
+                {t('projects.description')}
               </p>
             </div>
 
@@ -383,16 +388,16 @@ export default function Home() {
                     <img src="/project-images/Screenshot from 2025-11-16 14-03-45.png" alt="E-Commerce Platform" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-black dark:text-white">E-Commerce Platform</h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A full-stack e-commerce solution built with Next.js, featuring user authentication, payment integration, and admin dashboard.</p>
+                    <h3 className="text-2xl font-bold text-black dark:text-white">{t('projects.items.0.title')}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{t('projects.items.0.description')}</p>
                   </div>
                   <div className="flex items-center justify-between pt-4">
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Next.js</span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">TypeScript</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.0.tech1')}</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.0.tech2')}</span>
                     </div>
                     <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
-                      <span>View</span>
+                      <span>{t('projects.items.0.view')}</span>
                       <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
@@ -407,16 +412,16 @@ export default function Home() {
                     <img src="/project-images/Screenshot from 2025-11-16 14-06-26.png" alt="Analytics Dashboard" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-black dark:text-white">Analytics Dashboard</h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A comprehensive analytics dashboard with real-time data visualization, built with React and D3.js for interactive charts.</p>
+                    <h3 className="text-2xl font-bold text-black dark:text-white">{t('projects.items.1.title')}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{t('projects.items.1.description')}</p>
                   </div>
                   <div className="flex items-center justify-between pt-4">
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">React</span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">D3.js</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.1.tech1')}</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.1.tech2')}</span>
                     </div>
                     <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
-                      <span>View</span>
+                      <span>{t('projects.items.1.view')}</span>
                       <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
@@ -431,16 +436,16 @@ export default function Home() {
                     <img src="/project-images/Screenshot from 2025-11-16 14-10-03.png" alt="Weather Dashboard" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-black dark:text-white">Weather Dashboard</h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A responsive weather dashboard with location-based forecasts, interactive maps, and historical data visualization.</p>
+                    <h3 className="text-2xl font-bold text-black dark:text-white">{t('projects.items.2.title')}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{t('projects.items.2.description')}</p>
                   </div>
                   <div className="flex items-center justify-between pt-4">
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Vue.js</span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Chart.js</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.2.tech1')}</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.2.tech2')}</span>
                     </div>
                     <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
-                      <span>View</span>
+                      <span>{t('projects.items.2.view')}</span>
                       <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
@@ -455,16 +460,16 @@ export default function Home() {
                     <img src="/project-images/Screenshot from 2025-11-16 14-15-43.png" alt="Portfolio Website" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-black dark:text-white">Portfolio Website</h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A modern portfolio website showcasing projects, skills, and experience with smooth animations and responsive design.</p>
+                    <h3 className="text-2xl font-bold text-black dark:text-white">{t('projects.items.3.title')}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{t('projects.items.3.description')}</p>
                   </div>
                   <div className="flex items-center justify-between pt-4">
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Next.js</span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Tailwind CSS</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.3.tech1')}</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.3.tech2')}</span>
                     </div>
                     <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
-                      <span>View</span>
+                      <span>{t('projects.items.3.view')}</span>
                       <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
@@ -479,16 +484,16 @@ export default function Home() {
                     <img src="/project-images/Screenshot from 2025-11-16 14-18-07.png" alt="Task Management App" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-black dark:text-white">Task Management App</h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                    <h3 className="text-2xl font-bold text-black dark:text-white">{t('projects.items.4.title')}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{t('projects.items.4.description')}</p>
                   </div>
                   <div className="flex items-center justify-between pt-4">
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Vue.js</span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Firebase</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.4.tech1')}</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.4.tech2')}</span>
                     </div>
                     <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
-                      <span>View</span>
+                      <span>{t('projects.items.4.view')}</span>
                       <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
@@ -503,16 +508,16 @@ export default function Home() {
                     <img src="/project-images/Screenshot from 2025-11-16 14-03-45.png" alt="Blog Platform" className="w-full h-full object-cover" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-black dark:text-white">Blog Platform</h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">A full-featured blog platform with markdown support, SEO optimization, and content management system.</p>
+                    <h3 className="text-2xl font-bold text-black dark:text-white">{t('projects.items.5.title')}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{t('projects.items.5.description')}</p>
                   </div>
                   <div className="flex items-center justify-between pt-4">
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Gatsby</span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">GraphQL</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.5.tech1')}</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">{t('projects.items.5.tech2')}</span>
                     </div>
                     <a href="#" className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors">
-                      <span>View</span>
+                      <span>{t('projects.items.5.view')}</span>
                       <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
@@ -531,14 +536,13 @@ export default function Home() {
     <div className="space-y-8 mb-16">
       <div className="space-y-4">
         <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-black via-gray-800 to-black dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent animate-fade-in">
-          Let's Connect
+          {t('contact.title')}
         </h2>
         <div className="h-1 w-32 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mx-auto"></div>
       </div>
 
       <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fade-in-delay">
-        Ready to bring your ideas to life? Whether it's a groundbreaking project, a collaboration opportunity,
-        or just a friendly chat about the latest in tech—I'm here and excited to connect with you!
+        {t('contact.description')}
       </p>
     </div>
 
@@ -560,7 +564,7 @@ export default function Home() {
                   <h3 className="text-lg font-bold text-black dark:text-white">Email</h3>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">ayuk.giress@example.com</p>
                   <a href="mailto:ayuk.giress@example.com" className="inline-flex items-center gap-1 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-medium text-sm transition-colors group/link mt-1">
-                    <span>Drop me a line</span>
+                    <span>Drop a line</span>
                     <svg className="w-3 h-3 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -628,8 +632,8 @@ export default function Home() {
               </svg>
             </div>
             <div className="space-y-2 text-center">
-              <h3 className="text-2xl font-bold text-black dark:text-white">Send a Message</h3>
-              <p className="text-gray-600 dark:text-gray-300">I'd love to hear from you!</p>
+              <h3 className="text-2xl font-bold text-black dark:text-white">Let's Chat</h3>
+              <p className="text-gray-600 dark:text-gray-300">I'd love to hear from you</p>
             </div>
 
             <form className="space-y-6 flex-1">
@@ -643,7 +647,7 @@ export default function Home() {
                     id="name"
                     name="name"
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors"
-                    placeholder="Your name"
+                    placeholder="Your Name"
                     required
                   />
                 </div>
@@ -672,7 +676,7 @@ export default function Home() {
                   name="message"
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors resize-none"
-                  placeholder="Tell me about your project or just say hello!"
+                  placeholder="Tell us about your project"
                   required
                 />
               </div>

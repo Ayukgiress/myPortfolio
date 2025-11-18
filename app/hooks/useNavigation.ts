@@ -10,7 +10,7 @@ interface UseNavigationReturn {
 }
 
 export const useNavigation = (): UseNavigationReturn => {
-  const [activeItem, setActiveItem] = useState<string | null>(null);
+  const [activeItem, setActiveItem] = useState<string | null>('home');
 
   const handleItemClick = useCallback((item: NavigationItem) => {
     setActiveItem(item.id);

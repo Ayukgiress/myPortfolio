@@ -9,6 +9,8 @@ export const navigationConfig: NavigationConfig = {
     { id: 'home', label: 'Home', href: '#home' },
     { id: 'about', label: 'About Me', href: '#about' },
     { id: 'certifications', label: 'Certifications', href: '#certifications' },
+    { id: 'theme', label: 'Theme', href: '' },
+    { id: 'language', label: 'Language', href: '' },
     { id: 'projects', label: 'Projects', href: '#projects' },
     { id: 'contact', label: 'Contact', href: '#contact' }
   ]

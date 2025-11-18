@@ -1,0 +1,125 @@
+{
+  "hero": {
+    "name": "Ayuk Giress",
+    "title": "Full Stack Entwickler",
+    "subtitle": "Leidenschaftlich beim Erstellen großartiger Web-Erlebnisse",
+    "learnMore": "Mehr Erfahren",
+    "contactMe": "Kontaktieren Sie Mich"
+  },
+  "about": {
+    "title": "Über Mich",
+    "description": "Ich bin ein leidenschaftlicher Full Stack Entwickler mit Expertise in modernen Web-Technologien. Ich liebe es, schöne, funktionale und benutzerfreundliche Anwendungen zu erstellen, die reale Probleme lösen. Mit einer soliden Grundlage in Frontend- und Backend-Entwicklung erwecke ich Ideen durch sauberen Code und innovative Lösungen zum Leben.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Datenbanken",
+    "tools": "Tools & Versionskontrolle",
+    "technologies": {
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "html5": "HTML5",
+      "react": "React",
+      "nextjs": "Next.js",
+      "tailwind": "Tailwind",
+      "nodejs": "Node.js",
+      "express": "Express",
+      "nestjs": "NestJS",
+      "reactnative": "React Native",
+      "mongodb": "MongoDB",
+      "postgresql": "PostgreSQL",
+      "git": "Git",
+      "npm": "npm",
+      "pnpm": "pnpm"
+    }
+  },
+  "certifications": {
+    "title": "Zertifizierungen",
+    "description": "Hier sind einige Zertifizierungen, die ich erhalten habe, um meine Fähigkeiten und Kenntnisse in verschiedenen Technologien zu validieren.",
+    "javascript": {
+      "title": "JavaScript",
+      "description": "Zertifizierung auf mittlerem Niveau, die Kompetenz in JavaScript-Grundlagen, ES6+-Funktionen und modernen Entwicklungspraktiken demonstriert.",
+      "level": "Mittelstufe",
+      "platform": "HackerRank"
+    },
+    "react": {
+      "title": "React",
+      "description": "Grundlagen-Zertifizierung, die grundlegende React-Konzepte abdeckt, einschließlich Komponenten, Props, State-Management und JSX.",
+      "level": "Grundlagen",
+      "platform": "HackerRank"
+    },
+    "nodejs": {
+      "title": "Node.js",
+      "description": "Zertifizierung, die Kenntnisse der Node.js-Grundlagen demonstriert, einschließlich Module, Dateisystemoperationen und serverseitige JavaScript-Entwicklung.",
+      "level": "Zertifiziert",
+      "platform": "HackerRank"
+    }
+  },
+  "projects": {
+    "title": "Projekte",
+    "description": "Eine Auswahl meiner aktuellen Arbeiten und Projekte, die meine Fähigkeiten und Leidenschaft für die Entwicklung demonstrieren.",
+    "items": [
+      {
+        "title": "E-Commerce-Plattform",
+        "description": "Eine vollständige E-Commerce-Lösung, die mit Next.js erstellt wurde und Benutzerauthentifizierung, Zahlungsintegration und Admin-Dashboard umfasst.",
+        "tech1": "Next.js",
+        "tech2": "TypeScript",
+        "view": "Ansehen"
+      },
+      {
+        "title": "Analytics Dashboard",
+        "description": "Ein umfassendes Analytics-Dashboard mit Echtzeit-Datenvisualisierung, erstellt mit React und D3.js für interaktive Diagramme.",
+        "tech1": "React",
+        "tech2": "D3.js",
+        "view": "Ansehen"
+      },
+      {
+        "title": "Wetter Dashboard",
+        "description": "Ein responsives Wetter-Dashboard mit standortbasierten Vorhersagen, interaktiven Karten und historischer Datenvisualisierung.",
+        "tech1": "Vue.js",
+        "tech2": "Chart.js",
+        "view": "Ansehen"
+      },
+      {
+        "title": "Portfolio-Website",
+        "description": "Eine moderne Portfolio-Website, die Projekte, Fähigkeiten und Erfahrungen mit flüssigen Animationen und responsivem Design präsentiert.",
+        "tech1": "Next.js",
+        "tech2": "Tailwind CSS",
+        "view": "Ansehen"
+      },
+      {
+        "title": "Aufgabenverwaltungs-App",
+        "description": "Eine kollaborative Aufgabenverwaltungsanwendung mit Echtzeit-Updates, Drag-and-Drop-Funktionalität und Teamzusammenarbeitsfunktionen.",
+        "tech1": "Vue.js",
+        "tech2": "Firebase",
+        "view": "Ansehen"
+      },
+      {
+        "title": "Blog-Plattform",
+        "description": "Eine vollständige Blog-Plattform mit Markdown-Unterstützung, SEO-Optimierung und Content-Management-System.",
+        "tech1": "Gatsby",
+        "tech2": "GraphQL",
+        "view": "Ansehen"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt Aufnehmen",
+    "description": "Ich bin immer an neuen Möglichkeiten und spannenden Projekten interessiert. Lassen Sie uns besprechen, wie wir zusammenarbeiten können, um Ihre Ideen zum Leben zu erwecken.",
+    "email": "E-Mail",
+    "location": "Standort",
+    "dropLine": "Schreiben Sie eine Nachricht",
+    "openToOpportunities": "Offen für Möglichkeiten",
+    "letsChat": "Lassen Sie uns Chatten",
+    "backToTop": "Zurück nach Oben",
+    "form": {
+      "title": "Lassen Sie uns Chatten",
+      "subtitle": "Ich würde mich freuen, von Ihnen zu hören",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "placeholderName": "Ihr Name",
+      "placeholderEmail": "ihre.email@beispiel.com",
+      "placeholderMessage": "Erzählen Sie uns von Ihrem Projekt",
+      "sendMessage": "Nachricht Senden"
+    }
+  }
+}

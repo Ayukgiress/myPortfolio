@@ -1,0 +1,125 @@
+{
+  "hero": {
+    "name": "Ayuk Giress",
+    "title": "Full Stack Developer",
+    "subtitle": "Passionate about creating amazing web experiences",
+    "learnMore": "Learn More",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a passionate Full Stack Developer with expertise in modern web technologies. I love creating beautiful, functional, and user-friendly applications that solve real-world problems. With a strong foundation in both frontend and backend development, I bring ideas to life through clean code and innovative solutions.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Databases",
+    "tools": "Tools & Version Control",
+    "technologies": {
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "html5": "HTML5",
+      "react": "React",
+      "nextjs": "Next.js",
+      "tailwind": "Tailwind",
+      "nodejs": "Node.js",
+      "express": "Express",
+      "nestjs": "NestJS",
+      "reactnative": "React Native",
+      "mongodb": "MongoDB",
+      "postgresql": "PostgreSQL",
+      "git": "Git",
+      "npm": "npm",
+      "pnpm": "pnpm"
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "description": "Here are some of the certifications I've earned to validate my skills and knowledge in various technologies.",
+    "javascript": {
+      "title": "JavaScript",
+      "description": "Intermediate level certification demonstrating proficiency in JavaScript fundamentals, ES6+ features, and modern development practices.",
+      "level": "Intermediate",
+      "platform": "HackerRank"
+    },
+    "react": {
+      "title": "React",
+      "description": "Basics certification covering fundamental React concepts including components, props, state management, and JSX.",
+      "level": "Basics",
+      "platform": "HackerRank"
+    },
+    "nodejs": {
+      "title": "Node.js",
+      "description": "Certification demonstrating knowledge of Node.js fundamentals, including modules, file system operations, and server-side JavaScript development.",
+      "level": "Certified",
+      "platform": "HackerRank"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "A showcase of my recent work and projects that demonstrate my skills and passion for development.",
+    "items": [
+      {
+        "title": "E-Commerce Platform",
+        "description": "A full-stack e-commerce solution built with Next.js, featuring user authentication, payment integration, and admin dashboard.",
+        "tech1": "Next.js",
+        "tech2": "TypeScript",
+        "view": "View"
+      },
+      {
+        "title": "Analytics Dashboard",
+        "description": "A comprehensive analytics dashboard with real-time data visualization, built with React and D3.js for interactive charts.",
+        "tech1": "React",
+        "tech2": "D3.js",
+        "view": "View"
+      },
+      {
+        "title": "Weather Dashboard",
+        "description": "A responsive weather dashboard with location-based forecasts, interactive maps, and historical data visualization.",
+        "tech1": "Vue.js",
+        "tech2": "Chart.js",
+        "view": "View"
+      },
+      {
+        "title": "Portfolio Website",
+        "description": "A modern portfolio website showcasing projects, skills, and experience with smooth animations and responsive design.",
+        "tech1": "Next.js",
+        "tech2": "Tailwind CSS",
+        "view": "View"
+      },
+      {
+        "title": "Task Management App",
+        "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+        "tech1": "Vue.js",
+        "tech2": "Firebase",
+        "view": "View"
+      },
+      {
+        "title": "Blog Platform",
+        "description": "A full-featured blog platform with markdown support, SEO optimization, and content management system.",
+        "tech1": "Gatsby",
+        "tech2": "GraphQL",
+        "view": "View"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together to bring your ideas to life.",
+    "email": "Email",
+    "location": "Location",
+    "dropLine": "Drop a line",
+    "openToOpportunities": "Open to opportunities",
+    "letsChat": "Let's Chat",
+    "backToTop": "Back to Top",
+    "form": {
+      "title": "Let's Chat",
+      "subtitle": "I'd love to hear from you",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "placeholderName": "Your Name",
+      "placeholderEmail": "your.email@example.com",
+      "placeholderMessage": "Tell us about your project",
+      "sendMessage": "Send Message"
+    }
+  }
+}

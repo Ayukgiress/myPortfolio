@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { NavigationItem } from '@/app/types';
 
@@ -14,7 +16,9 @@ const NavigationLink: React.FC<NavigationLinkProps> = ({
   className = '',
   onClick
 }) => {
-  const baseClasses = 'hover:text-green-500 transition-colors duration-300';
+  // Check if this link is active (for styling purposes)
+  const isActive = typeof window !== 'undefined' && window.location.hash === href;
+  const baseClasses = `hover:text-green-500 transition-colors duration-300 ${isActive ? 'text-green-500 font-semibold' : 'text-white'}`;
   const combinedClasses = `${baseClasses} ${className}`.trim();
 
   const handleClick = (e: React.MouseEvent) => {
