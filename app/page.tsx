@@ -3,6 +3,7 @@
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Typewriter from "./components/Typewriter";
 import { useTranslation } from 'react-i18next';
 import { SiJavascript, SiTailwindcss, SiHtml5, SiReact, SiReactquery, SiMongodb, SiPostgresql, SiNextdotjs, SiNodedotjs, SiNestjs, SiTypescript, SiExpress, SiGit, SiNpm, SiPnpm } from 'react-icons/si';
 // import {heroImage} from "../public/main/photo_2025-11-18_14-41-47.jpg"
@@ -15,17 +16,18 @@ export default function Home() {
       <Nav />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section id="home" className="min-h-screen flex items-center justify-center px-5 pt-32 pb-16 relative overflow-hidden">
+        <section id="home" className="min-h-screen flex items-center justify-center px-5 py-24 relative overflow-hidden">
   {/* Background Pattern */}
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(34,197,94,0.1),transparent_50%)] dark:bg-[radial-gradient(circle_at_30%_20%,rgba(34,197,94,0.05),transparent_50%)]"></div>
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(34,197,94,0.08),transparent_50%)] dark:bg-[radial-gradient(circle_at_70%_80%,rgba(34,197,94,0.03),transparent_50%)]"></div>
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center xl:w-[100rem] max-w-6xl mx-auto relative z-10">
+  <div className="max-w-6xl mx-auto relative z-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
     {/* Left Column - Name and Career */}
     <div className="animate-fade-in-up space-y-8">
       <div className="space-y-4">
-      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-black via-gray-800 to-black dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent leading-tight">
-          {t('hero.name')}
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-black via-gray-800 to-black dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent leading-tight font-roboto-condensed">
+          <Typewriter text={t('hero.name')} />
         </h1>
         <div className="h-1 w-32 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full"></div>
       </div>
@@ -90,7 +92,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
         <div className="relative w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-green-500 via-emerald-500 to-teal-500 rounded-full flex items-center justify-center overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
           <div className="bg-white dark:bg-gray-900 border-4 border-white dark:border-gray-800 rounded-full w-72 h-72 md:w-80 md:h-80 flex items-center justify-center shadow-inner">
-            <img src="/main/Untitled design (2).png" alt="Profile Photo" className="w-full h-full object-cover rounded-full" />
+            <img src="/main/photo_2025-11-19_11-05-58.jpg" alt="Profile Photo" className="w-full h-full object-cover rounded-full" />
           </div>
         </div>
         <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full animate-pulse shadow-lg flex items-center justify-center">
@@ -99,6 +101,7 @@ export default function Home() {
           </svg>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </section>

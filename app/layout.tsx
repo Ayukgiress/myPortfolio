@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Inter, Roboto_Mono, Roboto_Condensed } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { I18nProvider } from "./components/I18nProvider";
 import "./globals.css";
@@ -14,6 +14,13 @@ const geistMono = Roboto_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
   display: "swap",
+});
+
+const robotoCondensed = Roboto_Condensed({
+  variable: "--font-roboto-condensed",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "700"],
 });
 
 
@@ -39,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${robotoCondensed.variable} antialiased`}
       >
         <I18nProvider>
           <ThemeProvider
