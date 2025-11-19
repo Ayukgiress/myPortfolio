@@ -4,6 +4,7 @@ import { NavigationItem } from '@/types';
 interface NavigationLinkProps extends NavigationItem {
   isActive?: boolean;
   onClick?: (item: NavigationItem) => void;
+  className?: string;
 }
 
 const NavigationLink: React.FC<NavigationLinkProps> = ({
@@ -12,23 +13,27 @@ const NavigationLink: React.FC<NavigationLinkProps> = ({
   href,
   external = false,
   isActive = false,
-  onClick
+  onClick,
+  className
 }) => {
   const handleClick = (e: React.MouseEvent) => {
     if (onClick) {
       e.preventDefault();
-      onClick({ id, label, href, external });
+      onClick({ id, label, href, external, icon: undefined });
     }
-  };
+  }; // ← Missing brace fixed here
 
-  const baseClasses = 'relative px-3 py-2 text-sm font-medium transition-all duration-300 rounded-md';
-  const activeClasses = isActive 
-    ? 'text-green-400 bg-green-400/10' 
+  const baseClasses =
+    'relative px-3 py-2 text-sm font-medium transition-all duration-300 rounded-md';
+  const activeClasses = isActive
+    ? 'text-green-400 bg-green-400/10'
     : 'text-white hover:text-green-400 hover:bg-white/5';
 
   const linkProps = {
     href,
-    className: `${baseClasses} ${activeClasses}`,
+    className: className
+      ? `${baseClasses} ${activeClasses} ${className}`
+      : `${baseClasses} ${activeClasses}`,
     onClick: handleClick,
     ...(external && { target: '_blank', rel: 'noopener noreferrer' })
   };
