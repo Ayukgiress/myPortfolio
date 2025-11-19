@@ -3,12 +3,20 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import Backend from 'i18next-http-backend';
 
-i18n
-  .use(Backend)
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
+const isServer = typeof window === 'undefined';
+
+const initI18n = () => {
+  const chain = i18n
+    .use(Backend)
+    .use(initReactI18next);
+
+  if (!isServer) {
+    chain.use(LanguageDetector);
+  }
+
+  chain.init({
     fallbackLng: 'en',
+    lng: isServer ? 'en' : undefined,
     debug: process.env.NODE_ENV === 'development',
 
     interpolation: {
@@ -22,13 +30,18 @@ i18n
       },
     },
 
-    detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
-      caches: ['localStorage'],
-    },
+    ...((!isServer) && {
+      detection: {
+        order: ['localStorage', 'navigator', 'htmlTag'],
+        caches: ['localStorage'],
+      }
+    }),
 
     ns: ['common'],
     defaultNS: 'common',
   });
+};
+
+initI18n();
 
 export default i18n;

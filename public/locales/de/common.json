@@ -57,48 +57,51 @@
     "title": "Projekte",
     "description": "Eine Auswahl meiner aktuellen Arbeiten und Projekte, die meine Fähigkeiten und Leidenschaft für die Entwicklung demonstrieren.",
     "items": [
-      {
-        "title": "E-Commerce-Plattform",
-        "description": "Eine vollständige E-Commerce-Lösung, die mit Next.js erstellt wurde und Benutzerauthentifizierung, Zahlungsintegration und Admin-Dashboard umfasst.",
-        "tech1": "Next.js",
-        "tech2": "TypeScript",
-        "view": "Ansehen"
-      },
-      {
-        "title": "Analytics Dashboard",
-        "description": "Ein umfassendes Analytics-Dashboard mit Echtzeit-Datenvisualisierung, erstellt mit React und D3.js für interaktive Diagramme.",
-        "tech1": "React",
-        "tech2": "D3.js",
-        "view": "Ansehen"
-      },
-      {
-        "title": "Wetter Dashboard",
-        "description": "Ein responsives Wetter-Dashboard mit standortbasierten Vorhersagen, interaktiven Karten und historischer Datenvisualisierung.",
-        "tech1": "Vue.js",
-        "tech2": "Chart.js",
-        "view": "Ansehen"
-      },
-      {
-        "title": "Portfolio-Website",
-        "description": "Eine moderne Portfolio-Website, die Projekte, Fähigkeiten und Erfahrungen mit flüssigen Animationen und responsivem Design präsentiert.",
-        "tech1": "Next.js",
-        "tech2": "Tailwind CSS",
-        "view": "Ansehen"
-      },
-      {
-        "title": "Aufgabenverwaltungs-App",
-        "description": "Eine kollaborative Aufgabenverwaltungsanwendung mit Echtzeit-Updates, Drag-and-Drop-Funktionalität und Teamzusammenarbeitsfunktionen.",
-        "tech1": "Vue.js",
-        "tech2": "Firebase",
-        "view": "Ansehen"
-      },
-      {
-        "title": "Blog-Plattform",
-        "description": "Eine vollständige Blog-Plattform mit Markdown-Unterstützung, SEO-Optimierung und Content-Management-System.",
-        "tech1": "Gatsby",
-        "tech2": "GraphQL",
-        "view": "Ansehen"
-      }
+      [
+  {
+    "title": "Abstimmungsplattform",
+    "description": "Eine Full-Stack-Abstimmungsplattform, entwickelt mit Reactjs, mit Benutzer­authentifizierung, Analyse-Diagrammen und Admin-Dashboard.",
+    "tech1": "ReactJs",
+    "tech2": "Javascript",
+    "view": "Ansehen"
+  },
+  {
+    "title": "Fitness-Tracking-Plattform",
+    "description": "Eine umfassende Fitness-Tracking-Plattform mit Echtzeit-Workout-Erfassung, Berechnung verbrannter Kalorien und Berechnung der konsumierten Mahlzeiten.",
+    "tech1": "React",
+    "tech2": "Recharts",
+    "view": "Ansehen"
+  },
+  {
+    "title": "Aufgabenverwaltungs-App",
+    "description": "Eine kollaborative Aufgabenverwaltungsanwendung mit Echtzeit-Updates, Drag-and-Drop-Funktion und Teamzusammenarbeits-Features.",
+    "tech1": "ReactJs",
+    "tech2": "Nodejs",
+    "view": "Ansehen"
+  },
+  {
+    "title": "Agro Alfa",
+    "description": "Eine agro-pastorale Plattform, die verschiedene landwirtschaftliche Produkte für den Verbrauch sowie für die Landwirtschaft präsentiert.",
+    "tech1": "Next.js",
+    "tech2": "Tailwind CSS",
+    "view": "Ansehen"
+  },
+  {
+    "title": "QR-Code Essensbestellplattform",
+    "description": "Eine speziell entwickelte Plattform zum Bestellen von Mahlzeiten in Restaurants durch Scannen eines QR-Codes.",
+    "tech1": "Next.js",
+    "tech2": "QR Code",
+    "view": "Ansehen"
+  },
+  {
+    "title": "Blog-Plattform",
+    "description": "Eine funktionsreiche Blog-Plattform mit Markdown-Unterstützung, SEO-Optimierung und Content-Management-System.",
+    "tech1": "Gatsby",
+    "tech2": "GraphQL",
+    "view": "Ansehen"
+  }
+]
+
     ]
   },
   "contact": {

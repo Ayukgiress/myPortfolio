@@ -12,8 +12,10 @@ const languages = [
 export function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState('en');
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     setCurrentLang(i18n.language);
   }, [i18n.language]);
 

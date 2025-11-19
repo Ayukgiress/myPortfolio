@@ -24,12 +24,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
     onClose();
   };
 
-  if (!isOpen) return null;
-
   return (
-    <div className="lg:hidden">
-      <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm" onClick={onClose} />
-      <div className="fixed top-0 right-0 z-50 h-full w-64 bg-neutral-900 shadow-xl">
+    <div className={`lg:hidden ${!isOpen ? 'hidden' : ''}`}>
+      <div className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm" onClick={onClose} />
+      <div className="fixed top-0 right-0 z-50 h-full w-80 bg-neutral-900 shadow-xl border-l border-neutral-800">
         <div className="flex items-center justify-between p-4 border-b border-neutral-800">
           <span className="text-lg font-semibold text-white">Menu</span>
           <button
@@ -42,12 +40,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
           </button>
         </div>
         <nav className="p-4">
-          <ul className="space-y-2">
+          <ul className="space-y-4">
             {items.map((item) => (
-              <li key={item.id}>
+              <li key={item.id} className="border-b border-neutral-800 pb-2 last:border-b-0">
                 <NavigationLink
                   {...item}
-                  isActive={activeItem === item.id}
+                  className="block py-3 px-2 text-lg font-medium hover:bg-neutral-800 rounded-lg transition-colors"
                   onClick={handleItemClick}
                 />
               </li>

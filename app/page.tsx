@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import { useTranslation } from 'react-i18next';
 import { SiJavascript, SiTailwindcss, SiHtml5, SiReact, SiReactquery, SiMongodb, SiPostgresql, SiNextdotjs, SiNodedotjs, SiNestjs, SiTypescript, SiExpress, SiGit, SiNpm, SiPnpm } from 'react-icons/si';
+// import {heroImage} from "../public/main/photo_2025-11-18_14-41-47.jpg"
 
 export default function Home() {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ export default function Home() {
       <Nav />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section id="home" className="min-h-screen flex items-center justify-center px-5 pt-24 pb-16 relative overflow-hidden">
+        <section id="home" className="min-h-screen flex items-center justify-center px-5 pt-32 pb-16 relative overflow-hidden">
   {/* Background Pattern */}
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(34,197,94,0.1),transparent_50%)] dark:bg-[radial-gradient(circle_at_30%_20%,rgba(34,197,94,0.05),transparent_50%)]"></div>
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(34,197,94,0.08),transparent_50%)] dark:bg-[radial-gradient(circle_at_70%_80%,rgba(34,197,94,0.03),transparent_50%)]"></div>
@@ -89,14 +90,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
         <div className="relative w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-green-500 via-emerald-500 to-teal-500 rounded-full flex items-center justify-center overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
           <div className="bg-white dark:bg-gray-900 border-4 border-white dark:border-gray-800 rounded-full w-72 h-72 md:w-80 md:h-80 flex items-center justify-center shadow-inner">
-            <div className="text-center space-y-4">
-              <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full mx-auto flex items-center justify-center">
-                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-              <p className="text-gray-600 dark:text-gray-400 font-medium">Your Photo</p>
-            </div>
+            <img src="/main/Untitled design (2).png" alt="Profile Photo" className="w-full h-full object-cover rounded-full" />
           </div>
         </div>
         <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full animate-pulse shadow-lg flex items-center justify-center">
