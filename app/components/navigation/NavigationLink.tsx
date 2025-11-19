@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavigationItem } from '@/app/types';
+import { NavigationItem } from '@/types';
 
 interface NavigationLinkProps extends NavigationItem {
   isActive?: boolean;

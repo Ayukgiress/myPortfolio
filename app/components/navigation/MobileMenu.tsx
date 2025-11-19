@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavigationItem } from '@/app/types';
+import { NavigationItem } from '@/types';
 
 
 import NavigationLink from './NavigationLink';

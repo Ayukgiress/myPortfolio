@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionProps } from '@/app/types';
+import { SectionProps } from '@/types';
 import Container from './Container';
 
 const Section: React.FC<SectionProps> = ({

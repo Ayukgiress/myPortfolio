@@ -1,6 +1,6 @@
 import React from 'react';
 // import { NavigationItem } from '@/types/navigation';
-import { NavigationItem } from '@/app/types';
+import { NavigationItem } from '@/types';
 import NavigationLink from './NavigationLink';
 import { ThemeToggle } from './ThemeToggle';
 import { LanguageSwitcher } from './LanguageSwitcher';
