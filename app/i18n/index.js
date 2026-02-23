@@ -19,15 +19,21 @@ const initI18n = () => {
     lng: isServer ? 'en' : undefined,
     debug: process.env.NODE_ENV === 'development',
 
+    // Only load these specific languages
+    supportedLngs: ['en', 'de', 'fr'],
+    
+    // Don't load non-explicit supported languages
+    nonExplicitSupportedLngs: false,
+    
+    // Load only current language (not all languages)
+    load: 'currentOnly',
+
     interpolation: {
       escapeValue: false,
     },
 
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
-      requestOptions: {
-        cache: 'no-store',
-      },
     },
 
     ...((!isServer) && {

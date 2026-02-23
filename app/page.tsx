@@ -26,16 +26,16 @@ export default function Home() {
     {/* Left Column - Name and Career */}
     <div className="animate-fade-in-up space-y-8">
       <div className="space-y-4">
-      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-black via-gray-800 to-black dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent leading-tight font-roboto-condensed">
-          <Typewriter text={t('hero.name')} />
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-black via-gray-800 to-black dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent leading-tight font-roboto-condensed">
+          {t('hero.name')}
         </h1>
         <div className="h-1 w-32 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full"></div>
+        <p className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300">
+          <Typewriter texts={t('hero.title', { returnObjects: true }) as string[]} />
+        </p>
       </div>
 
       <div className="space-y-6">
-        <p className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300">
-          {t('hero.title')}
-        </p>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg">
           {t('hero.subtitle')}
         </p>

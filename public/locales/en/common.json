@@ -1,7 +1,7 @@
 {
   "hero": {
     "name": "Ayuk Giress",
-    "title": "Full Stack Developer",
+    "title": ["Full Stack Developer", "TypeScript Enthusiast", "Mobile Developer"],
     "subtitle": "Passionate about creating amazing web experiences",
     "learnMore": "Learn More",
     "contactMe": "Contact Me"

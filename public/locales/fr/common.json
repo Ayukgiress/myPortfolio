@@ -1,7 +1,7 @@
 {
   "hero": {
     "name": "Ayuk Giress",
-    "title": "Développeur Full Stack",
+    "title": ["Développeur Full Stack", "Enthousiaste TypeScript", "Développeur Mobile"],
     "subtitle": "Passionné par la création d'expériences web exceptionnelles",
     "learnMore": "En Savoir Plus",
     "contactMe": "Me Contacter"
