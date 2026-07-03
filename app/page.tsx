@@ -34,154 +34,118 @@ export default function Home() {
         {/* Hero Section */}
         <section
           id="home"
-          className="min-h-screen flex items-center justify-center px-5 pt-8 pb-24 relative overflow-hidden"
+          className="min-h-screen flex items-center px-6 pt-24 pb-16 relative overflow-hidden"
         >
-          {/* Background Pattern */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(34,197,94,0.1),transparent_50%)] dark:bg-[radial-gradient(circle_at_30%_20%,rgba(34,197,94,0.05),transparent_50%)]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(34,197,94,0.08),transparent_50%)] dark:bg-[radial-gradient(circle_at_70%_80%,rgba(34,197,94,0.03),transparent_50%)]"></div>
+          {/* Subtle background glow */}
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-green-500/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-green-500/3 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="max-w-6xl mx-auto relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start">
-              {/* Left Column - Name and Career */}
-              <div className="animate-fade-in-up flex flex-col items-start text-left w-full">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-black via-gray-800 to-black dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent leading-tight font-roboto-condensed">
+          <div className="max-w-6xl mx-auto w-full px-5 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+              {/* Left Column */}
+              <div className="animate-fade-in-up flex flex-col items-start">
+
+                {/* Availability badge */}
+                <div className="flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-green-500/30 bg-green-500/5">
+                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                  <span className="text-sm text-green-600 dark:text-green-400 font-medium tracking-wide">Available for work</span>
+                </div>
+
+                {/* Name */}
+                <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-bold leading-[1.1] tracking-tight text-gray-900 dark:text-white">
                   {t("hero.name")}
                 </h1>
-                <div className="h-1 w-32 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mt-4"></div>
-                <p className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mt-4">
-                  <Typewriter
-                    texts={
-                      t("hero.title", { returnObjects: true }) as string[]
-                    }
-                  />
+
+                {/* Role typewriter */}
+                <p className="mt-4 text-xl md:text-2xl font-medium text-green-600 dark:text-green-400 tracking-wide">
+                  <Typewriter texts={t("hero.title", { returnObjects: true }) as string[]} />
                 </p>
 
-                <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed mt-6">
+                {/* Divider */}
+                <div className="mt-6 w-12 h-px bg-green-500" />
+
+                {/* Subtitle */}
+                <p className="mt-6 text-base md:text-lg text-gray-500 dark:text-gray-400 leading-relaxed max-w-md">
                   {t("hero.subtitle")}
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                {/* CTA Buttons */}
+                <div className="flex flex-wrap gap-3 mt-8">
                   <a
-                    href="#about"
-                    className="group bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-green-500/25 transform hover:-translate-y-1"
+                    href="#projects"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold rounded-lg transition-colors duration-200"
                   >
-                    <span className="flex items-center justify-center gap-2">
-                      {t("hero.learnMore")}
-                      <svg
-                        className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                        />
-                      </svg>
-                    </span>
+                    View My Work
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
                   </a>
                   <a
                     href="#contact"
-                    className="group border-2 border-green-600 text-green-600 dark:text-green-400 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-green-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-green-500/25 transform hover:-translate-y-1"
+                    className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-600 hover:border-green-500 dark:hover:border-green-500 text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 text-sm font-semibold rounded-lg transition-colors duration-200"
                   >
-                    <span className="flex items-center justify-center gap-2">
-                      {t("hero.contactMe")}
-                      <svg
-                        className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </span>
+                    {t("hero.contactMe")}
                   </a>
                 </div>
 
                 {/* Social Links */}
-                <div className="flex space-x-4 pt-2">
-                  <a
-                    href="https://twitter.com/ayukgiress"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group p-3 bg-white/80 dark:bg-gray-800/80 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200/50 dark:border-gray-700/50"
-                  >
-                    <svg
-                      className="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                <div className="flex items-center gap-5 mt-10">
+                  <span className="text-xs text-gray-400 uppercase tracking-widest">Follow</span>
+                  <div className="w-8 h-px bg-gray-300 dark:bg-gray-600" />
+                  <a href="https://github.com/ayukgiress" target="_blank" rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg>
                   </a>
-                  <a
-                    href="https://linkedin.com/in/ayukgiress"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group p-3 bg-white/80 dark:bg-gray-800/80 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200/50 dark:border-gray-700/50"
-                  >
-                    <svg
-                      className="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                  <a href="https://linkedin.com/in/ayukgiress" target="_blank" rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                     </svg>
                   </a>
-                  <a
-                    href="https://github.com/ayukgiress"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group p-3 bg-white/80 dark:bg-gray-800/80 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200/50 dark:border-gray-700/50"
-                  >
-                    <svg
-                      className="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  <a href="https://twitter.com/ayukgiress" target="_blank" rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                     </svg>
                   </a>
                 </div>
               </div>
 
               {/* Right Column - Image */}
-              <div className="flex justify-center animate-fade-in-right">
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-                  <div className="relative w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-green-500 via-emerald-500 to-teal-500 rounded-full flex items-center justify-center overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
-                    <div className="bg-white dark:bg-gray-900 border-4 border-white dark:border-gray-800 rounded-full w-72 h-72 md:w-80 md:h-80 flex items-center justify-center shadow-inner">
-                      <img
-                        src="/main/photo_2025-11-19_11-05-58.jpg"
-                        alt="Profile Photo"
-                        className="w-full h-full object-cover rounded-full"
-                      />
-                    </div>
+              <div className="flex justify-center lg:justify-end animate-fade-in-right">
+                <div className="relative">
+                  {/* Decorative corner lines */}
+                  <div className="absolute -top-4 -left-4 w-16 h-16 border-t-2 border-l-2 border-green-500/40 rounded-tl-lg" />
+                  <div className="absolute -bottom-4 -right-4 w-16 h-16 border-b-2 border-r-2 border-green-500/40 rounded-br-lg" />
+
+                  {/* Photo */}
+                  <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-[360px] lg:h-[360px] rounded-2xl overflow-hidden">
+                    <img
+                      src="/main/photo_2025-11-19_11-05-58.jpg"
+                      alt="Ayuk Giress"
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Subtle overlay gradient at bottom */}
+                    <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/30 to-transparent" />
                   </div>
-                  <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full animate-pulse shadow-lg flex items-center justify-center">
-                    <svg
-                      className="w-8 h-8 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      />
-                    </svg>
+
+                  {/* Experience badge */}
+                  <div className="absolute -bottom-5 -left-5 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 shadow-lg">
+                    <p className="text-2xl font-bold text-gray-900 dark:text-white leading-none">3+</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Years of<br/>Experience</p>
+                  </div>
+
+                  {/* Stack badge */}
+                  <div className="absolute -top-5 -right-5 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 shadow-lg">
+                    <p className="text-2xl font-bold text-gray-900 dark:text-white leading-none">15+</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Projects<br/>Delivered</p>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -499,7 +463,7 @@ export default function Home() {
           className="min-h-screen flex items-center justify-center px-5 py-24 bg-gradient-to-b from-black to-gray-900/50 dark:from-gray-900/50 dark:to-black relative"
         >
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(34,197,94,0.03),transparent_70%)]"></div>
-          <div className="max-w-6xl mx-auto relative z-10">
+          <div className="max-w-6xl mx-auto w-full px-5 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center space-y-8 mb-16">
               <div className="space-y-4">
                 <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent animate-fade-in">
@@ -615,7 +579,7 @@ export default function Home() {
           className="min-h-screen flex items-center justify-center px-5 py-24 bg-gradient-to-b from-white to-gray-50/50 dark:from-black dark:to-gray-900/50 relative"
         >
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(34,197,94,0.05),transparent_70%)]"></div>
-          <div className="max-w-6xl mx-auto relative z-10">
+          <div className="max-w-6xl mx-auto w-full px-5 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center space-y-8 mb-16">
               <div className="space-y-4">
                 <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-black via-gray-800 to-black dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent animate-fade-in">

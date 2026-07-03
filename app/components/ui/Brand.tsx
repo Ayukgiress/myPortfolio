@@ -6,40 +6,45 @@ interface BrandProps {
   className?: string;
 }
 
-const Brand: React.FC<BrandProps> = ({
-  name,
-  href = '#',
-  className = ''
-}) => {
-  const baseClasses = 'w-16 h-16 relative animate-fade-in hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl';
-  const combinedClasses = `${baseClasses} ${className}`.trim();
-
-  const videoClasses = 'w-full h-full object-cover rounded-full pointer-events-none border-2 border-green-600 hover:border-green-400';
-
-  const content = (
-    <video
-      src="/logo/y.mp4"
-      autoPlay
-      loop
-      muted
-      playsInline
-      title="Brand Logo"
-      className={videoClasses}
-    />
-  );
-
-  if (href) {
-    return (
-      <a href={href} className={combinedClasses}>
-        {content}
-      </a>
-    );
-  }
-
+const Brand: React.FC<BrandProps> = ({ name, href = '#', className = '' }) => {
   return (
-    <div className={combinedClasses}>
-      {content}
-    </div>
+    <a href={href} aria-label={name} className={`flex items-center group ${className}`}>
+      <svg
+        viewBox="0 0 160 36"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-8 w-auto"
+      >
+        {/* Green accent bar */}
+        <rect x="0" y="6" width="3" height="24" rx="1.5" fill="#22c55e" />
+
+        {/* First name */}
+        <text
+          x="10"
+          y="26"
+          fill="white"
+          fontSize="18"
+          fontWeight="600"
+          fontFamily="system-ui, -apple-system, sans-serif"
+          letterSpacing="-0.3"
+        >
+          Ayuk
+        </text>
+
+        {/* Last name — lighter weight, green tint */}
+        <text
+          x="58"
+          y="26"
+          fill="#22c55e"
+          fontSize="18"
+          fontWeight="300"
+          fontFamily="system-ui, -apple-system, sans-serif"
+          letterSpacing="-0.3"
+        >
+          Giress
+        </text>
+      </svg>
+    </a>
   );
 };
 

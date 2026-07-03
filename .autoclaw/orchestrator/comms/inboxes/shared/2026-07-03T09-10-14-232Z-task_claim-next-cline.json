@@ -1,0 +1,14 @@
+{
+  "id": "msg-claim-next-cline-mr4pq9xz",
+  "from": "orchestrator-loop",
+  "to": "shared",
+  "type": "task_claim",
+  "timestamp": "2026-07-03T09:10:14.232Z",
+  "task_id": "next-cline",
+  "payload": {
+    "vendor": "kilocode",
+    "priority": "low"
+  },
+  "requires_response": true,
+  "expires_at": "2026-07-03T09:40:14.232Z"
+}

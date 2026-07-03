@@ -1,0 +1,10 @@
+{
+  "tick": 25,
+  "startedAt": "2026-07-03T08:57:50.256Z",
+  "lastTickAt": "2026-07-03T09:14:13.753Z",
+  "totalAgentsSeen": 3,
+  "totalTicks": 25,
+  "totalErrors": 0,
+  "totalDispatches": 10,
+  "vendorStats": {}
+}

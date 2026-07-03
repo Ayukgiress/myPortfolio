@@ -1,0 +1,45 @@
+{
+  "agents": [
+    {
+      "id": "kilocode",
+      "name": "Kilo Code",
+      "extension_id": "kilocode.kilo-code",
+      "detected": true,
+      "rules_path": ".clinerules/cross-agent-protocol.md",
+      "inbox_path": ".autoclaw/orchestrator/comms/inboxes/kilocode/",
+      "hooks_supported": false,
+      "last_heartbeat": null,
+      "status": "detected",
+      "loop_mechanism": "plain-message",
+      "keepalive_template": "templates/keepalive/kilocode.md"
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "extension_id": "saoudrizwan.claude-dev",
+      "detected": true,
+      "rules_path": ".clinerules/cross-agent-protocol.md",
+      "inbox_path": ".autoclaw/orchestrator/comms/inboxes/cline/",
+      "hooks_supported": false,
+      "last_heartbeat": null,
+      "status": "detected",
+      "loop_mechanism": "plain-message",
+      "keepalive_template": "templates/keepalive/kilocode.md"
+    },
+    {
+      "id": "continue",
+      "name": "Continue",
+      "extension_id": "Continue.continue",
+      "detected": true,
+      "rules_path": ".continue/prompts/cross-agent-protocol.md",
+      "inbox_path": ".autoclaw/orchestrator/comms/inboxes/continue/",
+      "hooks_supported": false,
+      "last_heartbeat": null,
+      "status": "detected",
+      "loop_mechanism": "plain-message",
+      "keepalive_template": "templates/keepalive/kilocode.md"
+    }
+  ],
+  "ide": "Visual Studio Code",
+  "provisioned_at": "2026-07-03T08:58:13.347Z"
+}
