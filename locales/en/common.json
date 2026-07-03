@@ -97,10 +97,10 @@
       },
       
       {
-        "title": "Blog Platform",
-        "description": "A full-featured blog platform with markdown support, SEO optimization, and content management system.",
-        "tech1": "Gatsby",
-        "tech2": "GraphQL",
+        "title": "Genius",
+        "description": "An AI-powered resume analyzer and job matching assistant that helps job seekers optimize their resumes and land their dream jobs.",
+        "tech1": "Next.js",
+        "tech2": "AI",
         "view": "View"
       }
     ]

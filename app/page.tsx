@@ -620,7 +620,9 @@ export default function Home() {
                       </span>
                     </div>
                     <a
-                      href="#"
+                      href="https://vothub.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors"
                     >
                       <span>{t("projects.items.0.view")}</span>
@@ -669,7 +671,9 @@ export default function Home() {
                       </span>
                     </div>
                     <a
-                      href="#"
+                      href="https://uptrack-phi.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors"
                     >
                       <span>{t("projects.items.1.view")}</span>
@@ -718,7 +722,9 @@ export default function Home() {
                       </span>
                     </div>
                     <a
-                      href="#"
+                      href="https://taskydev.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors"
                     >
                       <span>{t("projects.items.2.view")}</span>
@@ -767,7 +773,9 @@ export default function Home() {
                       </span>
                     </div>
                     <a
-                      href="#"
+                      href="https://agroalfa.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors"
                     >
                       <span>{t("projects.items.3.view")}</span>
@@ -842,9 +850,10 @@ export default function Home() {
                 <div className="space-y-6">
                   <div className="w-full h-48 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
                     <img
-                      src="/project-images/Screenshot from 2025-11-16 14-03-45.png"
-                      alt="Blog Platform"
+                      src="/project-images/Screenshot from 2026-07-03 12-49-34.png"
+                      alt="Genius AI Resume Analyzer"
                       className="w-full h-full object-cover"
+                      onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                     />
                   </div>
                   <div className="space-y-3">
@@ -865,7 +874,9 @@ export default function Home() {
                       </span>
                     </div>
                     <a
-                      href="#"
+                      href="https://geniuspage.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group/link flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-semibold transition-colors"
                     >
                       <span>{t("projects.items.5.view")}</span>
@@ -1160,6 +1171,7 @@ export default function Home() {
                               strokeWidth={2}
                               d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                             />
+                            
                           </svg>
                           Send Message
                         </button>
