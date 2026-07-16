@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Typewriter from "./components/Typewriter";
 import { useTranslation } from "react-i18next";
+import { FaWhatsapp } from "react-icons/fa";
 import {
   SiJavascript,
   SiTailwindcss,
@@ -949,10 +950,10 @@ export default function Home() {
                           Email
                         </h3>
                         <p className="text-gray-600 dark:text-gray-300 text-sm">
-                          ayuk.giress@example.com
+                          giress865@gmail.com
                         </p>
                         <a
-                          href="mailto:ayuk.giress@example.com"
+                          href="mailto:giress865@gmail.com"
                           className="inline-flex items-center gap-1 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-medium text-sm transition-colors group/link mt-1"
                         >
                           <span>Drop a line</span>
@@ -1003,7 +1004,7 @@ export default function Home() {
                           Location
                         </h3>
                         <p className="text-gray-600 dark:text-gray-300 text-sm">
-                          Somewhere in the World
+                          Yaounde, Cameroon
                         </p>
                         <div className="flex items-center gap-2 text-green-600 dark:text-green-400 mt-1">
                           <svg
@@ -1031,22 +1032,12 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a
-                      href="mailto:ayuk.giress@example.com"
+                      href="https://wa.me/237676184440"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-green-500/25 transform hover:-translate-y-1 flex items-center gap-3 w-full sm:w-auto justify-center"
                     >
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
+                      <FaWhatsapp className="w-5 h-5" />
                       <span>Let's Chat</span>
                     </a>
                     <a
