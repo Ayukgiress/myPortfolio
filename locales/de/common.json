@@ -1,0 +1,125 @@
+{
+  "hero": {
+    "name": "Ayuk Giress",
+    "title": ["Full Stack Entwickler", "TypeScript Enthusiast", "Mobile Entwickler"],
+    "subtitle": "Leidenschaftlich beim Erstellen großartiger Web-Erlebnisse",
+    "learnMore": "Mehr Erfahren",
+    "contactMe": "Kontaktieren Sie Mich"
+  },
+  "about": {
+    "title": "Über Mich",
+    "description": "Ich bin ein leidenschaftlicher Full Stack Entwickler mit Expertise in modernen Web-Technologien. Ich liebe es, schöne, funktionale und benutzerfreundliche Anwendungen zu erstellen, die reale Probleme lösen. Mit einer soliden Grundlage in Frontend- und Backend-Entwicklung erwecke ich Ideen durch sauberen Code und innovative Lösungen zum Leben.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Datenbanken",
+    "tools": "Tools & Versionskontrolle",
+    "technologies": {
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "html5": "HTML5",
+      "react": "React",
+      "nextjs": "Next.js",
+      "tailwind": "Tailwind",
+      "nodejs": "Node.js",
+      "express": "Express",
+      "nestjs": "NestJS",
+      "reactnative": "React Native",
+      "mongodb": "MongoDB",
+      "postgresql": "PostgreSQL",
+      "git": "Git",
+      "npm": "npm",
+      "pnpm": "pnpm"
+    }
+  },
+  "certifications": {
+    "title": "Zertifizierungen",
+    "description": "Hier sind einige Zertifizierungen, die ich erhalten habe, um meine Fähigkeiten und Kenntnisse in verschiedenen Technologien zu validieren.",
+    "javascript": {
+      "title": "JavaScript",
+      "description": "Zertifizierung auf mittlerem Niveau, die Kompetenz in JavaScript-Grundlagen, ES6+-Funktionen und modernen Entwicklungspraktiken demonstriert.",
+      "level": "Mittelstufe",
+      "platform": "HackerRank"
+    },
+    "react": {
+      "title": "React",
+      "description": "Grundlagen-Zertifizierung, die grundlegende React-Konzepte abdeckt, einschließlich Komponenten, Props, State-Management und JSX.",
+      "level": "Grundlagen",
+      "platform": "HackerRank"
+    },
+    "nodejs": {
+      "title": "Node.js",
+      "description": "Zertifizierung, die Kenntnisse der Node.js-Grundlagen demonstriert, einschließlich Module, Dateisystemoperationen und serverseitige JavaScript-Entwicklung.",
+      "level": "Zertifiziert",
+      "platform": "HackerRank"
+    }
+  },
+  "projects": {
+    "title": "Projekte",
+    "description": "Eine Auswahl meiner aktuellen Arbeiten und Projekte, die meine Fähigkeiten und Leidenschaft für die Entwicklung demonstrieren.",
+    "items": [
+      {
+        "title": "Abstimmungsplattform",
+        "description": "Eine Full-Stack-Abstimmungsplattform, entwickelt mit Reactjs, mit Benutzer­authentifizierung, Analyse-Diagrammen und Admin-Dashboard.",
+        "tech1": "ReactJs",
+        "tech2": "Javascript",
+        "view": "Ansehen"
+      },
+      {
+        "title": "Fitness-Tracking-Plattform",
+        "description": "Eine umfassende Fitness-Tracking-Plattform mit Echtzeit-Workout-Erfassung, Berechnung verbrannter Kalorien und Berechnung der konsumierten Mahlzeiten.",
+        "tech1": "React",
+        "tech2": "Recharts",
+        "view": "Ansehen"
+      },
+      {
+        "title": "Aufgabenverwaltungs-App",
+        "description": "Eine kollaborative Aufgabenverwaltungsanwendung mit Echtzeit-Updates, Drag-and-Drop-Funktion und Teamzusammenarbeits-Features.",
+        "tech1": "ReactJs",
+        "tech2": "Nodejs",
+        "view": "Ansehen"
+      },
+      {
+        "title": "Agro Alfa",
+        "description": "Eine agro-pastorale Plattform, die verschiedene landwirtschaftliche Produkte für den Verbrauch sowie für die Landwirtschaft präsentiert.",
+        "tech1": "Next.js",
+        "tech2": "Tailwind CSS",
+        "view": "Ansehen"
+      },
+      {
+        "title": "QR-Code Essensbestellplattform",
+        "description": "Eine speziell entwickelte Plattform zum Bestellen von Mahlzeiten in Restaurants durch Scannen eines QR-Codes.",
+        "tech1": "Next.js",
+        "tech2": "QR Code",
+        "view": "Ansehen"
+      },
+      {
+        "title": "Blog-Plattform",
+        "description": "Eine funktionsreiche Blog-Plattform mit Markdown-Unterstützung, SEO-Optimierung und Content-Management-System.",
+        "tech1": "Gatsby",
+        "tech2": "GraphQL",
+        "view": "Ansehen"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt Aufnehmen",
+    "description": "Ich bin immer an neuen Möglichkeiten und spannenden Projekten interessiert. Lassen Sie uns besprechen, wie wir zusammenarbeiten können, um Ihre Ideen zum Leben zu erwecken.",
+    "email": "E-Mail",
+    "location": "Standort",
+    "dropLine": "Schreiben Sie eine Nachricht",
+    "openToOpportunities": "Offen für Möglichkeiten",
+    "letsChat": "Lassen Sie uns Chatten",
+    "backToTop": "Zurück nach Oben",
+    "form": {
+      "title": "Lassen Sie uns Chatten",
+      "subtitle": "Ich würde mich freuen, von Ihnen zu hören",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "placeholderName": "Ihr Name",
+      "placeholderEmail": "ihre.email@beispiel.com",
+      "placeholderMessage": "Erzählen Sie uns von Ihrem Projekt",
+      "sendMessage": "Nachricht Senden"
+    }
+  }
+}

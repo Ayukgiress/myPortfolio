@@ -1,0 +1,14 @@
+{
+  "id": "msg-claim-next-continue-mr4prjto",
+  "from": "orchestrator-loop",
+  "to": "shared",
+  "type": "task_claim",
+  "timestamp": "2026-07-03T09:11:13.692Z",
+  "task_id": "next-continue",
+  "payload": {
+    "vendor": "kilocode",
+    "priority": "low"
+  },
+  "requires_response": true,
+  "expires_at": "2026-07-03T09:41:13.692Z"
+}

@@ -1,0 +1,128 @@
+{
+  "hero": {
+    "name": "Ayuk Giress",
+    "title": ["Développeur Full Stack", "Enthousiaste TypeScript", "Développeur Mobile"],
+    "subtitle": "Passionné par la création d'expériences web exceptionnelles",
+    "learnMore": "En Savoir Plus",
+    "contactMe": "Me Contacter"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "description": "Je suis un développeur Full Stack passionné avec une expertise dans les technologies web modernes. J'adore créer des applications belles, fonctionnelles et conviviales qui résolvent des problèmes réels. Avec une base solide en développement frontend et backend, je donne vie aux idées grâce à un code propre et des solutions innovantes.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Bases de Données",
+    "tools": "Outils & Contrôle de Version",
+    "technologies": {
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "html5": "HTML5",
+      "react": "React",
+      "nextjs": "Next.js",
+      "tailwind": "Tailwind",
+      "nodejs": "Node.js",
+      "express": "Express",
+      "nestjs": "NestJS",
+      "reactnative": "React Native",
+      "mongodb": "MongoDB",
+      "postgresql": "PostgreSQL",
+      "git": "Git",
+      "npm": "npm",
+      "pnpm": "pnpm"
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "description": "Voici quelques certifications que j'ai obtenues pour valider mes compétences et connaissances dans diverses technologies.",
+    "javascript": {
+      "title": "JavaScript",
+      "description": "Certification de niveau intermédiaire démontrant la maîtrise des fondamentaux JavaScript, des fonctionnalités ES6+ et des pratiques de développement modernes.",
+      "level": "Intermédiaire",
+      "platform": "HackerRank"
+    },
+    "react": {
+      "title": "React",
+      "description": "Certification de base couvrant les concepts fondamentaux de React incluant les composants, props, gestion d'état et JSX.",
+      "level": "Bases",
+      "platform": "HackerRank"
+    },
+    "nodejs": {
+      "title": "Node.js",
+      "description": "Certification démontrant la connaissance des fondamentaux de Node.js, incluant les modules, les opérations sur le système de fichiers et le développement JavaScript côté serveur.",
+      "level": "Certifié",
+      "platform": "HackerRank"
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "description": "Une vitrine de mes travaux récents et projets qui démontrent mes compétences et ma passion pour le développement.",
+    "items": [
+      [
+  {
+    "title": "Plateforme de Vote",
+    "description": "Une solution complète de plateforme de vote construite avec Reactjs, comprenant l’authentification des utilisateurs, des graphiques analytiques et un tableau de bord administrateur.",
+    "tech1": "ReactJs",
+    "tech2": "Javascript",
+    "view": "Voir"
+  },
+  {
+    "title": "Plateforme de Suivi Fitness",
+    "description": "Une plateforme complète de suivi fitness avec enregistrement en temps réel des entraînements, calcul des calories brûlées et calcul des repas consommés.",
+    "tech1": "React",
+    "tech2": "Recharts",
+    "view": "Voir"
+  },
+  {
+    "title": "Application de Gestion des Tâches",
+    "description": "Une application collaborative de gestion des tâches avec mises à jour en temps réel, fonction glisser-déposer, et fonctionnalités de collaboration en équipe.",
+    "tech1": "ReactJs",
+    "tech2": "Nodejs",
+    "view": "Voir"
+  },
+  {
+    "title": "Agro Alfa",
+    "description": "Une plateforme agro-pastorale présentant divers produits agricoles destinés à la consommation ainsi qu’à l’agriculture.",
+    "tech1": "Next.js",
+    "tech2": "Tailwind CSS",
+    "view": "Voir"
+  },
+  {
+    "title": "Plateforme de Commande Alimentaire par QR Code",
+    "description": "Une plateforme conçue spécialement pour commander des repas dans les restaurants en scannant un QR code.",
+    "tech1": "Next.js",
+    "tech2": "QR Code",
+    "view": "Voir"
+  },
+  {
+    "title": "Plateforme de Blog",
+    "description": "Une plateforme de blog complète avec support Markdown, optimisation SEO et système de gestion de contenu.",
+    "tech1": "Gatsby",
+    "tech2": "GraphQL",
+    "view": "Voir"
+  }
+]
+
+    ]
+  },
+  "contact": {
+    "title": "Entrons en Contact",
+    "description": "Je suis toujours intéressé par de nouvelles opportunités et des projets passionnants. Discutons de comment nous pouvons travailler ensemble pour donner vie à vos idées.",
+    "email": "Email",
+    "location": "Localisation",
+    "dropLine": "Écrivez-moi",
+    "openToOpportunities": "Ouvert aux opportunités",
+    "letsChat": "Discutons",
+    "backToTop": "Retour en Haut",
+    "form": {
+      "title": "Discutons",
+      "subtitle": "J'aimerais beaucoup avoir de vos nouvelles",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "placeholderName": "Votre Nom",
+      "placeholderEmail": "votre.email@exemple.com",
+      "placeholderMessage": "Parlez-nous de votre projet",
+      "sendMessage": "Envoyer le Message"
+    }
+  }
+}
